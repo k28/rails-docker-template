@@ -33,7 +33,13 @@ default: &default
 $ docker-compose build
 ```
 
-4. PostgresSQLにRailsのDBを構築する
+4. コンテナの起動
+
+```
+$ docker-compose up -d
+```
+
+5. PostgresSQLにRailsのDBを構築する
 
 ```
 $ docker-compose run app rails db:create
