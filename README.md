@@ -51,3 +51,9 @@ $ docker-compose run app rails db:create
 $ docker-compose run app ... # ...の部分にコマンドを入れる
 ```
 
+bashに入る
+
+```
+$ docker container exec -it app bash
+```
+
