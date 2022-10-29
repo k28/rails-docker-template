@@ -15,6 +15,7 @@ WORKDIR $APP_ROOT
 ADD ./src/Gemfile $APP_ROOT/Gemfile
 ADD ./src/Gemfile.lock $APP_ROOT/Gemfile.lock
 
+RUN bundle config force_ruby_platform true
 RUN bundle install
 
 ADD . $APP_ROOT

@@ -11,7 +11,7 @@ services:
       POSTGRES_PASSWORD: 'admin-pass'
   app:
     build: .
-    image: rails
+    #image: rails
     container_name: 'app'
     command: bundle exec rails s -p 80 -b '0.0.0.0'
     ports:
